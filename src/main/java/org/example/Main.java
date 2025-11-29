@@ -1,5 +1,8 @@
 package org.example;
 
+import org.example.easy.TwoSumSolution;
+import org.example.medium.ThreeSum;
+
 import java.util.Arrays;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or

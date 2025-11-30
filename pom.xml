@@ -42,6 +42,7 @@
                         <configuration>
                             <sourceDirs>
                                 <source>src/main/java</source>
+                                <source>src/main/kotlin</source>
                                 <source>target/generated-sources/annotations</source>
                             </sourceDirs>
                         </configuration>

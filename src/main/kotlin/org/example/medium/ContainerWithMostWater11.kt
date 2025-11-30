@@ -4,15 +4,16 @@ class ContainerWithMostWater11 {
     fun maxArea(height: IntArray): Int {
         val len=height.size
         var maxWater=0
-        for(i in 0 until len){
-            for(j in i+1 until len){
-                val containerHeight= height[i].coerceAtMost(height[j])
-                val containerWidth=j-i
-                val containerSize=containerWidth*containerHeight
-                if(containerSize>maxWater){
-                    maxWater=containerSize
-                }
-            }
+        var leftPointer=0
+        var rightPointer=len-1
+        while(leftPointer<rightPointer){
+
+            val containerHeight= height[leftPointer].coerceAtMost(height[rightPointer])
+            val containerWidth=rightPointer-leftPointer
+            val currentWater=containerWidth*containerHeight
+            maxWater= currentWater.coerceAtLeast(maxWater)
+            if(height[leftPointer]<height[rightPointer])  leftPointer++ else rightPointer--
+
         }
         return maxWater
     }

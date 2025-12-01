@@ -9,7 +9,8 @@ Helps you quickly review and practice common data structures and algorithms — 
 Supports both Java and Kotlin (mixed codebase), giving flexibility depending on your language preference.
 
 📂 Repository Structure
-nano-dsa/
+<pre style="white-space: pre-wrap; word-wrap: break-word;">
+    nano-dsa/
   ├── src/
   │     └── main/        # Source code folder
   │         ├── java/    # Solutions in Java
@@ -17,6 +18,9 @@ nano-dsa/
   ├── pom.xml            # Maven build configuration
   ├── .gitignore
   └── README.md          # This file
+</pre>
+
+
 
 
 Use src/main/java for Java-based solutions.
